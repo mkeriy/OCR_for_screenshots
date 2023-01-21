@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<title style="text-align: center ;">Upload File</title>
+<h1 style="text-align: center ;">Photo Upload</h1>
+<form action="/output" enctype="multipart/form-data" method="post" style="text-align: center ;">
+    <input name="files" type="file" multiple>
+    <input type="submit">
+</form>
+
+{% if file_url %}
+<br>
+<div>{{file_url}}</div>
+{% endif %}
